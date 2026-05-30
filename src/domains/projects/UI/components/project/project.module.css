@@ -1,0 +1,23 @@
+.project {
+    display: flex;
+    justify-content: start;
+    width: 100%;
+    align-items: start;
+    border-top: 1px solid var(--border);
+    text-align: left;
+    padding: 24px 20px;
+
+    @media (max-width: 1024px) {
+        flex-direction: column;
+    }
+}
+
+#duration_container {
+    /*flex: 0 0 10%;*/
+    padding: 1.8rem 1.5rem 1.8rem 2rem;
+}
+
+#project_details_container {
+    /*flex: 1;*/
+    padding: 1.8rem 2rem 1.8rem 1.8rem;
+}

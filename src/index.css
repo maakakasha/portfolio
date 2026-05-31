@@ -73,8 +73,8 @@
 }
 
 #root {
-    width: 1126px;
-    max-width: 100%;
+    /*width: 1126px;*/
+    max-width: 95%;
     margin: 0 auto;
     text-align: center;
     border-inline: 1px solid var(--border);
@@ -91,12 +91,12 @@ body {
 h1,
 h2 {
     font-family: var(--heading);
-    font-weight: 500;
     color: var(--text-h);
 }
 
 h1 {
     font-size: 56px;
+    font-weight: 700;
     letter-spacing: -1.68px;
     margin: 32px 0;
     @media (max-width: 1024px) {
@@ -107,6 +107,7 @@ h1 {
 
 h2 {
     font-size: 24px;
+    font-weight: 500;
     line-height: 118%;
     letter-spacing: -0.24px;
     margin: 0 0 8px;
@@ -131,6 +132,18 @@ code {
     line-height: 135%;
     padding: 4px 8px;
     background: var(--code-bg);
+}
+
+::selection {
+    background-color: var(--accent-bg);
+    color: var(--accent);
+    border-radius: 3px;
+}
+
+::-moz-selection {
+    background-color: rgba(175, 169, 236, 1);
+    color: #26215c;
+    border-radius: 3px;
 }
 
 @font-face {

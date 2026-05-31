@@ -1,11 +1,18 @@
 .project {
     display: flex;
     justify-content: start;
-    width: 100%;
     align-items: start;
-    border-top: 1px solid var(--border);
     text-align: left;
+
     padding: 24px 20px;
+    transition: background-color 100ms;
+
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+
+    &:hover {
+        background-color: var(--accent-bg);
+    }
 
     @media (max-width: 1024px) {
         flex-direction: column;
@@ -13,11 +20,11 @@
 }
 
 #duration_container {
-    /*flex: 0 0 10%;*/
-    padding: 1.8rem 1.5rem 1.8rem 2rem;
+    flex: 0 0 5%;
+    padding: 1.8rem 0rem 1.8rem 0rem;
 }
 
 #project_details_container {
-    /*flex: 1;*/
-    padding: 1.8rem 2rem 1.8rem 1.8rem;
+    flex: 1;
+    padding: 1.8rem 0rem 1.8rem 1.8rem;
 }

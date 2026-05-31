@@ -1,5 +1,7 @@
-export class PostsRepoAbstract {
-  function getPosts() : Post {
+import type { Post } from "../entities/post";
 
-  };
+export class PostsRepoAbstract {
+  getPosts(): Post {
+    return {} as Post;
+  }
 }

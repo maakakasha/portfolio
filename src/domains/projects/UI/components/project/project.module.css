@@ -7,7 +7,8 @@
     padding: 24px 20px;
     transition: background-color 100ms;
 
-    border-top: 1px solid var(--border);
+    border: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
     border-bottom: 1px solid var(--border);
 
     &:hover {

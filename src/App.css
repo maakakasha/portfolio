@@ -37,10 +37,19 @@ My implementation (completed)
     position: sticky;
     top: 0;
     align-self: start;
-    height: 100vh;
+    height: 90vh;
     overflow-y: auto;
     text-align: start;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
     padding: 24px 20px;
+
+    .my-name {
+        width: 300px;
+        line-height: 1;
+    }
 
     #job-title {
         color: var(--text-h);
@@ -69,4 +78,9 @@ My implementation (completed)
         height: auto;
         overflow-y: visible;
     }
+}
+
+#nmae-position-container {
+    width: "200px";
+    line-height: "1.03";
 }

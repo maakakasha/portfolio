@@ -14,7 +14,7 @@ My implementation (completed)
 #main-scaffold {
     position: relative;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 0.8fr 1.2fr;
     width: 100%;
     min-height: 100vh;
 }
@@ -34,8 +34,15 @@ My implementation (completed)
 }
 
 .screen-content {
-    min-height: 100vh;
     box-sizing: border-box;
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+    border-left: 1px solid var(--border);
+
+    p {
+        text-align: start;
+        margin-bottom: 16px;
+    }
 }
 
 .section-headline {
@@ -97,6 +104,7 @@ My implementation (completed)
 
     #thesis {
         width: 320px;
+        margin-bottom: 24px;
     }
 }
 

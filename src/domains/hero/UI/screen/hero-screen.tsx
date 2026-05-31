@@ -1,5 +1,6 @@
 import { Nav } from "../components/nav/nav";
 import { SocialIcons } from "../components/social-icons/social-icons";
+import { ThemeToggle } from "../components/theme-toggle/theme-toggle";
 
 export function HeroScreen() {
   return (
@@ -13,6 +14,10 @@ export function HeroScreen() {
       </div>
 
       <Nav />
+
+      <ThemeToggle />
+
+      <br></br>
 
       <SocialIcons />
     </div>

@@ -1,0 +1,31 @@
+.theme-toggle-input {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+    pointer-events: none;
+}
+
+.theme-toggle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    border: 1px solid var(--border);
+    cursor: pointer;
+    font-size: 13px;
+    color: var(--text);
+    transition: color 0.25s ease, border-color 0.25s ease;
+    user-select: none;
+    margin-top: 4px;
+}
+
+.theme-toggle::before {
+    content: "☾";
+}
+
+.theme-toggle-input:checked + .theme-toggle::before {
+    content: "☀";
+}

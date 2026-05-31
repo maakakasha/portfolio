@@ -12,7 +12,7 @@ export function Nav() {
 
   useEffect(() => {
     const ratios: Record<string, number> = Object.fromEntries(
-      SECTIONS.map(({ id }) => [id, 0])
+      SECTIONS.map(({ id }) => [id, 0]),
     );
 
     const observers = SECTIONS.map(({ id }) => {
@@ -24,11 +24,11 @@ export function Nav() {
           ratios[id] = entry.intersectionRatio;
           const mostVisible = Object.entries(ratios).reduce<[string, number]>(
             (best, [key, ratio]) => (ratio > best[1] ? [key, ratio] : best),
-            ["", 0]
+            ["", 0],
           );
           if (mostVisible[0]) setActive(mostVisible[0]);
         },
-        { threshold: Array.from({ length: 21 }, (_, i) => i / 20) }
+        { threshold: Array.from({ length: 21 }, (_, i) => i / 20) },
       );
 
       observer.observe(el);

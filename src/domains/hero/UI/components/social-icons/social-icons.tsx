@@ -8,7 +8,12 @@ export function SocialIcons() {
         className="social-link"
         aria-label="LinkedIn"
       >
-        <svg className="icon" role="presentation" aria-hidden="true">
+        <svg
+          className="icon"
+          viewBox="0 0 16.11 16.9"
+          role="presentation"
+          aria-hidden="true"
+        >
           <path
             fill="currentColor"
             fillRule="evenodd"
@@ -43,7 +48,12 @@ export function SocialIcons() {
         className="social-link"
         aria-label="Medium"
       >
-        <svg className="icon" role="presentation" aria-hidden="true">
+        <svg
+          className="icon"
+          viewBox="0 0 19.432 14.575"
+          role="presentation"
+          aria-hidden="true"
+        >
           <path
             fill="currentColor"
             d="M10.71 9.48c0 2.814-2.27 5.095-5.071 5.095C2.836 14.575.567 12.294.567 9.48S2.836 4.385 5.639 4.385c2.8 0 5.07 2.281 5.07 5.095m5.568 0c0 2.649-1.135 4.797-2.535 4.797S11.207 12.13 11.207 9.48s1.136-4.797 2.536-4.797 2.535 2.148 2.535 4.797m2.154 0c0 2.374-.4 4.298-.892 4.298s-.893-1.924-.893-4.298.4-4.298.893-4.298.892 1.924.892 4.298"

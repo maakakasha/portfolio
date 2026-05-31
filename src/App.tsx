@@ -1,32 +1,20 @@
 import "./App.css";
-import { Project } from "./domains/projects/UI/components/project/project";
-import { SocialIcons } from "./domains/social-icons/social-icons";
+import { HeroScreen } from "./domains/hero/UI/screen/hero-screen";
+import { AboutScreen } from "./domains/about/UI/screen/about-screen";
+import { ExperiencesScreen } from "./domains/experiences/UI/screen/experiences-screen";
+import { ProjectsScreen } from "./domains/projects/UI/screen/projects-screen";
 
 function App() {
   return (
-    <>
-      {/*<section id="spacer"></section>*/}
+    <section id="main-scaffold">
+      <HeroScreen />
 
-      <section id="main-scaffold">
-        <div className="fixed-hero">
-          <div id="name-position-container">
-            <h1 className="my-name">Mahmoud Abdelkareem</h1>
-            <p id="job-title">Flutter Mobile Engineer</p>
-            <p id="thesis">
-              I architect and build reliable, AI-augmented Mobile Apps.
-            </p>
-          </div>
-
-          <SocialIcons />
-        </div>
-
-        <div className="scrollable-content">
-          <Project />
-          <Project />
-          <Project />
-        </div>
-      </section>
-    </>
+      <div className="scrollable-content">
+        <AboutScreen />
+        <ExperiencesScreen />
+        <ProjectsScreen />
+      </div>
+    </section>
   );
 }
 

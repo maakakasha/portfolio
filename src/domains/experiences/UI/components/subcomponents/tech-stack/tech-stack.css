@@ -1,0 +1,14 @@
+.stack-badge-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.stack-badge {
+    padding: 5px 10px;
+    background-color: var(--accent-bg);
+    border-radius: 20px;
+    color: var(--accent);
+    font-size: 14px;
+}

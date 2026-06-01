@@ -44,7 +44,7 @@ export function SocialIcons() {
       </a>
 
       <a
-        href="https://medium.com/@you"
+        href="https://medium.com/@maakakasha1"
         className="social-link"
         aria-label="Medium"
       >

@@ -1,0 +1,26 @@
+.footer {
+    border-left: 1px solid var(--border);
+    border-right: 1px solid var(--border);
+    border-top: 1px solid var(--border);
+
+    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+}
+
+#stack {
+    text-align: start;
+    border-left: 1px solid var(--border);
+
+    code {
+        transition: color 100ms;
+
+        &:hover {
+            background-color: var(--accent-bg);
+        }
+    }
+}
+
+.subsection {
+    padding: 20px 24px;
+}

@@ -24,6 +24,12 @@
         }
     }
 
+    .no-link {
+        display: block;
+        font-size: 16px;
+        margin-bottom: 15px;
+    }
+
     .position {
         color: var(--text-h);
         font-weight: 600;

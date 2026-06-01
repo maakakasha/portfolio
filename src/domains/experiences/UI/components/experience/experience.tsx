@@ -10,6 +10,7 @@ export interface ExperienceProps {
   endDate: string;
   description: string;
   techStack: Array<string>;
+  link?: string;
 }
 
 export function Experience(props: ExperienceProps) {
@@ -24,6 +25,7 @@ export function Experience(props: ExperienceProps) {
           position={props.position}
           company={props.company}
           details={props.description}
+          href={props.link}
         />
         <TechStack stack={props.techStack} />
       </div>

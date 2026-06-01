@@ -3,7 +3,7 @@ import "./theme-toggle.css";
 export function ThemeToggle() {
   return (
     <>
-      <input type="checkbox" id="theme-toggle" className="theme-toggle-input" />
+      <input type="checkbox" id="theme-toggle" className="theme-toggle-input" defaultChecked />
       <label htmlFor="theme-toggle" className="theme-toggle" aria-label="Toggle theme" />
     </>
   );

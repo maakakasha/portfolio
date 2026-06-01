@@ -16,7 +16,7 @@ export const projects: ProjectProps[] = [
       "Apple Store",
       "Claude Code",
       "Bloc",
-      "AI API",
+      "Open Router",
       "Provider",
       "get_it",
       "Flutter_test",
@@ -24,15 +24,6 @@ export const projects: ProjectProps[] = [
     ],
     imageSrc: spoonImg,
   },
-  // {
-  //   title: "Baladna Currency Smart Currency Rate Exchanger",
-  //   description:
-  //     "Built a currency exchange converter for Baladna Bank (Sudan) that enables SDG conversion to 9 foreign currencies – using Flutter, OCR, Dart, and Provider – delivering a reliable tool for bank operations.",
-  //   redirectUrl:
-  //     "https://play.google.com/store/apps/details?id=com.oumlah.spoonapp",
-  //   techStack: ["Flutter", "Dart", "Provider", "OCR", "Firebase"],
-  //   imageSrc: "",
-  // },
   // {
   //   title: "Portfolio",
   //   imageSrc: "",

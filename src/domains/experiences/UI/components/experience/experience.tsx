@@ -14,12 +14,12 @@ export interface ExperienceProps {
 
 export function Experience(props: ExperienceProps) {
   return (
-    <div className={`${styles.project}`}>
+    <div className={`${styles.experience}`}>
       <div id={`${styles.duration_container}`}>
         <Duration start={props.startDate} end={props.endDate} />
       </div>
 
-      <div id={`${styles.project_details_container}`}>
+      <div id={`${styles.experience_details_container}`}>
         <JobDescription
           position={props.position}
           company={props.company}

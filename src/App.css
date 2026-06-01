@@ -1,10 +1,14 @@
 #spacer {
     height: 88px;
     border-top: 1px solid var(--border);
-    border-bottom: 1px solid var(--border);
     @media (max-width: 1024px) {
         height: 48px;
     }
+}
+
+.header-divider {
+    text-align: start;
+    padding: 20px 40px;
 }
 
 /*
@@ -38,6 +42,7 @@ My implementation (completed)
     border-top: 1px solid var(--border);
     border-bottom: 1px solid var(--border);
     border-left: 1px solid var(--border);
+    /*padding: 0 40px;*/
 
     p {
         text-align: start;
@@ -46,7 +51,27 @@ My implementation (completed)
 }
 
 .section-headline {
-    display: none;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    height: 48px;
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+    box-sizing: border-box;
+
+    font-family: var(--mono);
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--text-h);
+
+    @media (max-width: 1024px) {
+        position: sticky;
+        top: 0;
+        background: var(--bg);
+        z-index: 10;
+    }
 }
 
 .section-body {
@@ -56,29 +81,6 @@ My implementation (completed)
 
 #experience .section-body {
     padding: 0;
-}
-
-@media (max-width: 1024px) {
-    .section-headline {
-        display: flex;
-        align-items: center;
-        padding: 0 20px;
-        height: 48px;
-        border-top: 1px solid var(--border);
-        border-bottom: 1px solid var(--border);
-        position: sticky;
-        top: 0;
-        background: var(--bg);
-        z-index: 10;
-        box-sizing: border-box;
-
-        font-family: var(--heading);
-        font-size: 12px;
-        font-weight: 700;
-        letter-spacing: 0.12em;
-        text-transform: uppercase;
-        color: var(--text-h);
-    }
 }
 
 /* ── Right: sticky hero ── */

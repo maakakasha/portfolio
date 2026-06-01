@@ -3,13 +3,9 @@
     justify-content: start;
     align-items: start;
     text-align: left;
-
-    padding: 24px 20px;
+    padding: 24px 40px;
     transition: background-color 100ms;
-
     border: 1px solid var(--border);
-    border-bottom: 1px solid var(--border);
-    border-bottom: 1px solid var(--border);
 
     &:hover {
         background-color: var(--accent-bg);
@@ -17,15 +13,24 @@
 
     @media (max-width: 1024px) {
         flex-direction: column;
+        gap: 16px;
     }
 }
 
-#duration_container {
-    flex: 0 0 5%;
-    padding: 1.8rem 0rem 1.8rem 0rem;
+.thumbnail_container {
+    flex: 0 0 140px;
+    margin-right: 24px;
 }
 
-#project_details_container {
+.thumbnail {
+    width: 140px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 5px;
+    display: block;
+}
+
+.project_details_container {
     flex: 1;
-    padding: 1.8rem 0rem 1.8rem 1.8rem;
+    padding: 0;
 }

@@ -1,13 +1,11 @@
-import { Project } from "../components/project/project";
+import { ProjectsList } from "../components/projects-list/projects-list";
 
 export function ProjectsScreen() {
   return (
-    <section id="projects" className="screen-content">
+    <section id="projects">
       <div className="section-headline">Projects</div>
       <div>
-        <Project />
-        <Project />
-        <Project />
+        <ProjectsList />
       </div>
     </section>
   );

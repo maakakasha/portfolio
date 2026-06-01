@@ -1,41 +1,32 @@
-import { JobDescription } from "../subcomponents/description/job-description";
-import { Duration } from "../subcomponents/duration/duration";
+import { JobDescription } from "../../../../experiences/UI/components/subcomponents/description/job-description";
 import { TechStack } from "../subcomponents/tech-stack/tech-stack";
 import styles from "./project.module.css";
 
 export interface ProjectProps {
   title: string;
-  startDate: string;
-  endDate: string;
+  company?: string;
   description: string;
-  techStack: Array<string>;
   redirectUrl: string;
-  imageUrl: string;
+  techStack: Array<string>;
+  // Consumer imports the image as an ES module: import src from './image.png'
+  imageSrc: string;
 }
 
-export function Project() {
+export function Project(props: ProjectProps) {
   return (
-    <div className={`${styles.project}`}>
-      <div id={`${styles.duration_container}`}>
-        <Duration start="2024" end="PRESENT" />
+    <div className={styles.project}>
+      <div className={styles.thumbnail_container}>
+        <img src={props.imageSrc} alt={props.title} className={styles.thumbnail} />
       </div>
 
-      <div id={`${styles.project_details_container}`}>
+      <div className={styles.project_details_container}>
         <JobDescription
-          position="Principle Software Engineer"
-          company="IKM Digital"
-          details="Built, maintained, and shipped high-quality Flutter applications following clean architecture, SOLID principles, and test-driven development for a range of projects — including the Spoon app, where I led a major refactor from Firebase to Supabase and migrated user data using PSQL and Python. I also built custom Dart packages to automate boilerplate generation and integrated AI coding agents into my workflow. Outside of core development, I've used Python to filter datasets and normalize text for more user-friendly experiences. In addition, I developed Typescript Edge functions to hide sensitive processes from the fontend"
+          position={props.title}
+          company={props.company}
+          details={props.description}
+          href={props.redirectUrl}
         />
-        <TechStack
-          stack={[
-            "Tailwind CSS",
-            "Supabase",
-            "Mock",
-            "CSS",
-            "Jest",
-            "Javascript",
-          ]}
-        />
+        <TechStack stack={props.techStack} />
       </div>
     </div>
   );

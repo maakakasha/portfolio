@@ -1,5 +1,6 @@
 import type { ProjectProps } from "../UI/components/project/project";
 import spoonImg from "../../../assets/spoon-proj.png";
+import nassImg from "../../../assets/nass.png";
 
 export const projects: ProjectProps[] = [
   {
@@ -24,12 +25,14 @@ export const projects: ProjectProps[] = [
     ],
     imageSrc: spoonImg,
   },
-  // {
-  //   title: "Portfolio",
-  //   imageSrc: "",
-  //   redirectUrl: "",
-  //   description:
-  //     "Designed and built a personal portfolio site with a sticky two-column layout, smooth scroll-spy navigation, and a dark/light theme toggle — using React, TypeScript, and Vite with a local inter variable font for a clean typographic hierarchy.",
-  //   techStack: ["React", "Typescript", "CSS", "Vite", "Render"],
-  // },
+
+  //
+  {
+    title: "Nass app",
+    imageSrc: nassImg,
+    redirectUrl: "https://nass-app.com",
+    description:
+      "Collaborated as a mobile dev-ops developer on a cross‑platform (iOS and Android), creative-writing mobile app for Arabs, implementing Google and Apple authentication, taking responsibility of developing special iOS features, and successfully publishing the app to both the Apple App Store and Google Play Store",
+    techStack: ["React", "Typescript", "Vanilla CSS", "Vite"],
+  },
 ];

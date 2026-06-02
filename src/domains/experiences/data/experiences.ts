@@ -42,7 +42,7 @@ export const experiences: ExperienceProps[] = [
       "Play Store",
       "App Store",
     ],
-    link: "https://play.google.com/store/apps/details?id=com.oumlah.nass",
+    link: "https://nass-app.com",
   },
   {
     position: "Flutter Developer Co-op",
@@ -68,6 +68,7 @@ export const experiences: ExperienceProps[] = [
     company: "Balad Bank",
     startDate: "May",
     endDate: "May 2024",
+    link: "https://baladbank.net/en/home",
     description:
       "Built a currency exchange converter for Baladna Bank (Sudan) that enables SDG conversion to 9 foreign currencies – using Flutter, OCR, Dart, and Provider – delivering a reliable tool for bank operations.",
 

@@ -17,11 +17,12 @@ export function AboutScreen() {
           Currently, I&apos;m a freelancer actively developing a fitness
           application that&apos;s a candidate for support by 249 Startups Sudan.
           I architect new features involving AI and data-driven experiences,
-          partnering closely with backend services to integrate platforms like
-          BaaS providers and ensure seamless, responsive mobile performance. I
-          focus on turning intelligent insights into practical fitness tools,
-          always keeping the end user&apos;s journey at the center of every
-          technical decision.
+          including Retrieval-Augmented Generation (RAG) pipelines, partnering
+          closely with backend services to integrate platforms like BaaS
+          providers and ensure seamless, responsive mobile performance. I focus
+          on turning intelligent insights into practical fitness tools, always
+          keeping the end user&apos;s journey at the center of every technical
+          decision.
         </p>
 
         <p>
